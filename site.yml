@@ -1,0 +1,7 @@
+---
+- hosts: labsetup.org
+  become: true
+  tasks:
+    - name: update all
+      ansible.builtin.apt:
+        updatecache: yes
