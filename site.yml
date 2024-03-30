@@ -4,5 +4,4 @@
   tasks:
     - name: update all
       ansible.builtin.apt:
-        upgrade: dist
-        updatecache: yes
+        update_cache: yes
