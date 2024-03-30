@@ -4,6 +4,6 @@
   tasks:
     - name: install/update qemu agent
       ansible.builtin.apt:
-        name: qemu-agent
+        name: qemu-guest-agent
         state: latest
         update_cache: yes
