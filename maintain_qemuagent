@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - name: install/update qemu agent
+      ansible.builtin.apt:
+        name: qemu-agent
+        state: latest
+        update_cache: yes
