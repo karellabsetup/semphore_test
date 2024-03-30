@@ -3,4 +3,4 @@
   become: true
   tasks:
     - name: shutdown all webservers
-      community.general.shutdown:
+      ansible.builtin.reboot:
